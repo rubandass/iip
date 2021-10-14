@@ -1,0 +1,75 @@
+:root {
+  --theme-color: #7952b3;
+  --glowing-feedback: rgb(146, 230, 146);
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container-home-content {
+  max-width: 900px;
+}
+
+.nav-color {
+  background-color: var(--theme-color);
+}
+
+.login-btn {
+  color: #fff;
+  background-color: var(--theme-color);
+  border-color: #fff;
+  border-radius: 0.3rem;
+}
+
+.login-btn-menu {
+  color: #ffe484 !important;
+  background-color: var(--theme-color);
+  border-color: #ffe484;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 450px) {
+  .card-login {
+    padding: 48px 40px 36px;
+  }
+}
+
+@media (max-width: 449px) {
+  .card-login {
+    padding: 20px 10px 20px;
+  }
+}
+
+.active-menu {
+  color: antiquewhite;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-item .nav-link:hover {
+  border: 1px solid white;
+  background-color: #ffe484;
+  color: #000000 !important;
+  font-weight: 500;
+  border-radius: 0.3rem;
+}
+
+li .nav-link {
+  border: 1px solid transparent !important;
+}

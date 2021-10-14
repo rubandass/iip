@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="d-flex flex-fill align-items-center justify-content-center">
+    <div class="col-lg-5 col-md-6 col-sm-8 col-12">
+        <div class="card m-5">
+            <div class="card-header text-center">
+                <h4>Sign in</h4>
+            </div>
+            <div class="card-body">
+                <form class="" method="post" novalidate>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="id_username" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" id="id_username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="id_password">
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn login-btn mt-4 float-end">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
